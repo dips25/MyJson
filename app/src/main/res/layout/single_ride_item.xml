@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#222144"
+        >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/up_arrow_circular_button"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:id="@+id/from_icon"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/down_arrow_filled_circular_button"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:id="@+id/to_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/from"
+            android:layout_toEndOf="@id/from_icon"
+            android:layout_alignTop="@id/from_icon"
+            android:layout_alignBottom="@id/from_icon"
+            android:text="St.Mistro St."
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/to"
+            android:layout_toEndOf="@id/to_icon"
+            android:layout_alignTop="@id/to_icon"
+            android:layout_alignBottom="@id/to_icon"
+            android:text="Central Park"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/total_text"
+            android:text="Total"
+            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cost"
+
+            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/total_text"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/travel_time"
+            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"/>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

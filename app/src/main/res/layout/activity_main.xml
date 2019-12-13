@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/cardview_dark">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        android:id="@+id/jsontextview"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:background="#222144"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.25"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center">
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                       android:layout_width="96dp"
+                       android:layout_height="96dp"
+                       android:src="@drawable/ic_launcher_background"
+                       app:civ_border_width="2dp"
+                       app:civ_border_color="#FF000000"
+                       android:id="@+id/prof_img"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/name"
+                        android:text="Christopher Shelton"
+                        android:textSize="18dp"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/location"
+                        android:text="Greenwich"
+                        android:textSize="16dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/ridestext"
+                        android:text="Rides"
+                        android:textSize="12dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAllCaps="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/freeridestext"
+                        android:text="Free Rides"
+                        android:textSize="12dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAllCaps="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/creditstext"
+                        android:text="Credits"
+                        android:textSize="12dp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:textAllCaps="true"
+                        android:layout_marginEnd="6dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/no_of_rides"
+                        android:text="76"
+                        android:textSize="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/no_of_free_rides"
+                        android:text="12"
+                        android:textSize="25dp"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/credits"
+                        android:text="$100"
+                        android:textSize="25sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Past Trips"
+        android:layout_below="@id/jsontextview"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:id="@+id/pasttrips"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See All"
+        android:layout_below="@id/jsontextview"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_alignParentEnd="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pasttrips"
+        android:padding="10dp"
+        android:id="@+id/rides_recycler"/>
+
+
+</RelativeLayout>
