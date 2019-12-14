@@ -11,22 +11,56 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#222144"
-        >
+        android:padding="8dp">
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/up_arrow_circular_button"
             android:layout_alignParentTop="true"
-            android:layout_margin="10dp"
+
             android:id="@+id/from_icon"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/from_icon"
+            android:layout_above="@id/to_icon"
+            android:layout_alignRight="@id/from_icon"
+            android:layout_alignLeft="@id/from_icon"
+            android:gravity="center"
+            android:weightSum="3"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/white_dot"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/white_dot"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/white_dot"
+                android:layout_weight="1"/>
+
+
+
+
+        </LinearLayout>
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/down_arrow_filled_circular_button"
             android:layout_alignParentBottom="true"
-            android:layout_margin="10dp"
             android:id="@+id/to_icon"/>
 
         <TextView
@@ -47,7 +81,8 @@
             android:layout_alignTop="@id/to_icon"
             android:layout_alignBottom="@id/to_icon"
             android:text="Central Park"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -56,17 +91,15 @@
             android:text="Total"
             android:textColor="@android:color/white"
             android:layout_alignParentEnd="true"
-            android:layout_margin="10dp"/>
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/cost"
-
             android:textColor="@android:color/white"
             android:layout_alignParentEnd="true"
             android:layout_below="@id/total_text"
-            android:layout_marginEnd="10dp"
             android:textStyle="bold"
             android:textSize="16dp"
             />
@@ -78,7 +111,7 @@
             android:textColor="@android:color/white"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_margin="10dp"/>
+            />
 
 
 
