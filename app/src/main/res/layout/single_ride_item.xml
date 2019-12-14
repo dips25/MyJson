@@ -18,7 +18,6 @@
             android:layout_height="24dp"
             android:src="@drawable/up_arrow_circular_button"
             android:layout_alignParentTop="true"
-
             android:id="@+id/from_icon"/>
 
         <LinearLayout
@@ -113,17 +112,6 @@
             android:layout_alignParentBottom="true"
             />
 
-
-
-
-
-
-
-
-
     </RelativeLayout>
-
-
-
 
 </androidx.cardview.widget.CardView>
